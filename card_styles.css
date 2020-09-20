@@ -1,0 +1,135 @@
+.card0 {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+	border-radius: 100%;
+	background-color: beige;
+	box-shadow: 2px 2px grey;
+	transition: 0.4s;
+}
+
+.card0:hover {
+	background-color: lightblue;
+	transition: 0.05s;
+	transform: translate(5px, -5px);
+}
+
+
+.form {
+	display: block;
+	position: absolute; 
+	left: 50%;
+	top: 50%;
+}
+
+.innerform {
+	height: 95%;
+	width: 95%;
+	display: block;
+	position: absolute;
+}
+
+
+
+div>label
+{
+	width: 26px;
+	height: 26px;
+	margin-top: -13px;
+	margin-left: -13px;
+}
+
+.orange
+{
+	border: 1px solid orange;
+	color: orange;
+	background: orange;
+}
+
+.blau
+{
+	border: 1px solid blue;
+	color: blue;
+	background: blue;
+}
+
+.rot
+{
+	border: 1px solid red;
+	color: red;
+	background: red;
+}
+
+
+.viereck
+{
+	clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0, 0 0);
+	
+}
+
+
+.dreieck
+{
+	clip-path: polygon(0 0, 50% 100%, 100% 0, 0 0);
+}
+
+
+.fuenfeck
+{
+	clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
+}
+
+
+.voll
+{
+}
+
+.muster {
+	background-image: url(./images/dots.png);
+}
+
+.leer
+{
+	background-color: beige;
+}
+
+
+
+.drei1 {
+	transform: translate(0, -30px);
+}
+.drei2 {
+	transform: rotate(240deg) translate(0, -30px);
+}
+.drei3 {
+	transform: rotate(120deg) translate(0, -30px);
+}
+
+.zwei1 {
+	transform: translate(20px, -20px) rotate(45deg);
+}
+.zwei2 {
+	transform: translate(-20px, 20px) rotate(-135deg);
+}
+
+
+#Spielfeld { 
+  display: grid; 
+  grid-template-rows:110px 110px 110px; 
+  grid-template-columns:110px 110px 110px 110px; 
+}
+
+
+.hinted {
+	animation: hop 1s infinite;
+}
+
+@keyframes hop {
+	50% {
+	transform:translate(5px, -5px);
+	}
+	100% {
+	transform: translate(0px, 0px);
+	}
+}

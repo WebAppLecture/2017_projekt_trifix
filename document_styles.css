@@ -1,0 +1,65 @@
+#plSelForm
+{
+	background-color: ghostwhite;
+	border: solid 2px black;
+	display: inline-block;
+	margin-left: 50%;
+	padding-left: 10px;
+	transform: translate(-50%, 0);
+}
+
+h1
+{
+	font-size: 70pt;
+	text-align: center;
+}
+
+body
+{
+	background-color: cornflowerblue;
+}
+
+
+#main
+{
+	margin: auto;
+	width: 50%;
+}
+
+#Spielfeld
+{
+	background-color: ghostwhite;
+	width: 435px;
+	border: solid black 1px;
+}
+
+#feldWrap
+{
+	position: absolute;
+	top: 50px;
+	left: 20%;
+	max-width: 70%;	
+}
+
+#restartButt
+{
+	float: right;
+}
+
+#gameStats
+{
+	background-color: ghostwhite;
+	border: solid black 2px;
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	width: 20%;
+	padding-left: 10px;
+}
+
+#messLog
+{
+	background-color: ghostwhite;
+	border: solid black 2px;
+	padding:10px
+}

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang = "de">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Trifix (Projekt)</title>
+</head>
+
+<link rel="stylesheet" href="./card_styles.css">
+<link rel="stylesheet" href="./document_styles.css">
+
+
+<!--
+<script src="/usr/share/javascript/jquery/jquery.min.js"></script>
+-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./game_logic.js"></script>
+<script src="./players.js"></script>
+
+<script src="./handle_start.js"></script>
+<script src="./handle_statistics.js"></script>
+<script src="./handle_main.js"></script>
+
+
+
+<body>
+	<div id="start">
+		
+		<h1>T R I F I X</h1>
+		
+		<form id="plSelForm">
+
+			<label>Willkommen! Bitte Name und Zeichen eingeben:</label>
+			
+			</br></br>
+			
+			<div id="playerInput"></div>
+			
+			</br>
+		
+			<input type="button" id="addPlayer" value="+ add player" onclick="handleAddPlayer(this);">
+			
+			<input type="button" id="startButt" value="Start!" onclick="handleButtonStart();">
+		</form>
+		
+	</div>
+	
+	
+	<div id="main" hidden>
+		<div id="feldWrap">
+			<output id="messLog"></output>
+			<br/><br/>
+			<div id="Spielfeld"></div>
+			<br/>
+			<input type="button" id="noTButt" value="Kein Trifix" onclick="handleNoT();">
+			<input type="button" id="cancelButt" value="Doch nicht" onclick="handleCancel()";>
+			<input type="button" id="restartButt" value="Neustart" onclick="handleRestart();" hidden>
+		</div>
+		
+		<div id="gameStats">
+			<h2>Statistik</h2>
+			
+			<p>
+				<label>Restliche Karten: </label>
+				<output id="cardsLeft"></output>
+			</p>
+			
+			<div id="playerInfo"></div>
+			
+			<p>
+				<label>Verstrichene Zeit: </label>
+				<output id="passedTime"></output>
+			</p>
+		</div>
+		
+		
+	</div>
+	
+	
+
+</body>
+
+</html>
+
+<script>
+	var firstpl = addPlayer("Spieler1", "1");
+	$(".plDelBut", firstpl[0]).hide();
+</script>
